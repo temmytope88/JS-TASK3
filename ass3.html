@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+     <script>
+          function myfunc(num){
+
+           
+            let val =[];
+            for(i=1; i<=num; i++){
+              
+              if (i%3 == 0 && i%2 == 0 && i%5 == 0){  val[i-1]= "yu-gi-oh"; }
+              else if (i%2 == 0 && i%3 == 0){  val[i-1] = "yu-gi"; }
+              else if (i%2 == 0 && i%5 == 0){  val[i-1] = "yu-oh"; }
+              else if (i%3 == 0 && i%5 == 0){  val[i-1] = "gi-oh"; }
+              else if(i%2 == 0){  val[i-1]= "yu"; }
+              else if (i%3 == 0){  val[i-1] = "gi"; }
+              else if (i%5 == 0){  val[i-1] = "oh"; }
+              else{ val[i-1] = i;}
+
+            }
+
+            return val
+          }
+
+          console.log(myfunc(100));
+          console.log(myfunc(45));
+
+
+     </script>
+</body>
+</html>
